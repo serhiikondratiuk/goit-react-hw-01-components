@@ -1,0 +1,30 @@
+.statistics {
+  margin: 0 auto 20px;
+  font-family: Roboto;
+  display: block;
+  width: 360px;
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.stat-list {
+  display: flex;
+  justify-content: center;
+  background-color: #b1b1b138;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid whitesmoke;
+}
+
+.label {
+  margin-bottom: 5px;
+}
