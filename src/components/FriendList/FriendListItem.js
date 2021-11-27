@@ -1,9 +1,24 @@
-<li class="item">
-  <span class="status"></span>
-  <img class="avatar" src="" alt="User avatar" width="48" />
-  <p class="name"></p>
-</li>;
+import PropTypes from 'prop-types';
+import s from './FriendListItem.module.css';
 
-// import friends from 'путь/к/friends.json';
+function FriendListItem({ avatar, name, isOnline }) {
+  return (
+    <li className={s.item}>
+      {isOnline ? (
+        <span className={s.status && s['status--online']}>{isOnline}</span>
+      ) : (
+        <span className={s.status && s['status--offline']}>{isOnline}</span>
+      )}
+      <img className={s.avatar} src={avatar} alt={name} width="48" />
+      <p className={s.name}>{name}</p>
+    </li>
+  );
+}
 
-// <FriendList friends={friends} />,
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};
+
+export default FriendListItem;
