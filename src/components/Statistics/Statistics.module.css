@@ -15,14 +15,13 @@
 .stat-list {
   display: flex;
   justify-content: center;
-  background-color: #b1b1b138;
 }
 
 .item {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border: 1px solid whitesmoke;
+  border: 1px solid black;
 }
 
 .label {
