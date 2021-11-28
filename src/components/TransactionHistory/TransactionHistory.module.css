@@ -16,3 +16,13 @@
   width: 115px;
   padding: 5px 10px;
 }
+
+.table-data {
+  width: 115px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.table-row:nth-child(even) {
+  background-color: rgb(245, 236, 226);
+}

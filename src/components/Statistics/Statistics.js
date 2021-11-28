@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
-import randomIntegerFromInterval from '../RandomColor/RandomColor';
+import randomIntegerFromInterval from '../../helpers/randomizer';
 
 function Statistics({ title, stats, colors }) {
   return (
@@ -34,6 +34,7 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     }),
   ),
+  colors: PropTypes.array,
 };
 
 export default Statistics;
